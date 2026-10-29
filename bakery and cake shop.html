@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sweet Treats Bakery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff5ee;
+            color: #4a2920;
+        }
+
+        header {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #f4a460;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a2920;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .offer {
+            text-align: center;
+            background-color: #ffe4b5;
+            padding: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #8b4513;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 220px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #d2691e;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #8b4513;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d2691e;
+        }
+
+        footer {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sweet Treats Bakery</h1>
+        <p>Freshly Baked with Love!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cakes">Cakes</a>
+        <a href="#pastries">Pastries</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="offer" id="home">
+        <h2>🎉 Special Seasonal Offer!</h2>
+        <p>Get 10% OFF on selected cakes this season!</p>
+    </section>
+
+    <h2 id="cakes">Our Delicious Cakes</h2>
+
+    <section class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400"
+                 alt="Chocolate cake">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and creamy chocolate cake.</p>
+            <p class="price">₹500</p>
+            <button onclick="order('Chocolate Cake')">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400"
+                 alt="Strawberry cake">
+            <h3>Strawberry Cake</h3>
+            <p>Fresh strawberry cream cake.</p>
+            <p class="price">₹600</p>
+            <button onclick="order('Strawberry Cake')">Order Now</button>
+        </div>
+
+        <div class="card" id="pastries">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400"
+                 alt="Sweet pastry">
+            <h3>Pastries</h3>
+            <p>Soft and tasty cream pastries.</p>
+            <p class="price">₹80</p>
+            <button onclick="order('Pastries')">Order Now</button>
+        </div>
+
+        <div class="card" id="cookies">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400"
+                 alt="Chocolate chip cookies">
+            <h3>Cookies</h3>
+            <p>Crispy chocolate chip cookies.</p>
+            <p class="price">₹150</p>
+            <button onclick="order('Cookies')">Order Now</button>
+        </div>
+
+    </section>
+
+    <h2>Custom Cake Designs</h2>
+    <p style="text-align:center;">
+        Order birthday, wedding, and anniversary cakes
+        made especially for you!
+    </p>
+
+    <h2 id="contact">Contact Us</h2>
+
+    <footer>
+        <p>Sweet Treats Bakery</p>
+        <p>Address: Main Road, Vijayawada</p>
+        <p>Phone: 98765 43210</p>
+        <p>Email: sweettreats@example.com</p>
+        <p>© 2026 Sweet Treats Bakery</p>
+    </footer>
+
+    <script>
+        function order(product) {
+            alert("Thank you! You selected " + product +
+                  ". Please contact our bakery to place your order.");
+        }
+    </script>
+
+</body>
+</html>
